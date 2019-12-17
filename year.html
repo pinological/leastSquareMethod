@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Year Prediction</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="head">
+        Year Prediction
+    </div>
+    <div class="body">
+        So how does it work, Put 5 year with its interval as well.<br> This is a first version so it can only do of 5 year so ya .<br> Please enter the value Below<br>
+        <hr>
+    </div>
+    <center>
+        <h1>Enter Year</h1>
+        <input id="year1" type="text" class="input" placeholder="Year1"><br>
+        <hr>
+        <h1>Year interval</h1>
+        <input id="inter" type="text" class="input" placeholder="interval"><br>
+        <hr>
+        <h1>Sales</h1>
+        <input id="sales1" type="text" class="input" placeholder="sales1"><br>
+        <input id="sales2" type="text" class="input" placeholder="sales2"><br>
+        <input id="sales3" type="text" class="input" placeholder="sales3"><br>
+        <input id="sales4" type="text" class="input" placeholder="sales4"><br>
+        <input id="sales5" type="text" class="input" placeholder="sales5"><br>
+        <hr>
+        <button type="button" onclick="okboomer();">Prediction</button>
+        <hr>
+        <h1>Answer here</h1>
+
+        <p class="ans" id="equation"></p>
+        <table style="width:100%">
+            <caption>Least Square Method</caption>
+            <tr>
+                <th>Year</th>
+                <th>Sales (y)</th>
+                <th>x</th>
+                <th>xy</th>
+                <th>x2</th>
+                <th>Trend</th>
+            </tr>
+            <tr>
+                <td>
+                    <p id="yearr1"></p>
+                </td>
+                <td>
+                    <p id="saless1"></p>
+                </td>
+
+                <td>
+                    <p id="xx1"></p>
+                </td>
+                <td>
+                    <p id="xxyy1"></p>
+                </td>
+                <td>
+                    <p id="xxx1"></p>
+                </td>
+                <td>
+                    <p id="td1"></p>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <p id="yearr2"></p>
+                </td>
+                <td>
+                    <p id="saless2"></p>
+                </td>
+                <td>
+                    <p id="xx2"></p>
+                </td>
+                <td>
+                    <p id="xxyy2"></p>
+                </td>
+                <td>
+                    <p id="xxx2"></p>
+                </td>
+                <td>
+                    <p id="td2"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="yearr3"></p>
+                </td>
+                <td>
+                    <p id="saless3"></p>
+                </td>
+                <td>
+                    <p id="xx3"></p>
+                </td>
+                <td>
+                    <p id="xxyy3"></p>
+                </td>
+                <td>
+                    <p id="xxx3"></p>
+                </td>
+                <td>
+                    <p id="td3"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="yearr4"></p>
+                </td>
+                <td>
+                    <p id="saless4"></p>
+                </td>
+                <td>
+                    <p id="xx4"></p>
+                </td>
+                <td>
+                    <p id="xxyy4"></p>
+                </td>
+                <td>
+                    <p id="xxx4"></p>
+                </td>
+                <td>
+                    <p id="td4"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="yearr5"></p>
+                </td>
+                <td>
+                    <p id="saless5"></p>
+                </td>
+                <td>
+                    <p id="xx5"></p>
+                </td>
+                <td>
+                    <p id="xxyy5"></p>
+                </td>
+                <td>
+                    <p id="xxx5"></p>
+                </td>
+                <td>
+                    <p id="td5"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="yetotal"></p>
+                </td>
+                <td>
+                    <p id="satotal"></p>
+                </td>
+                <td>
+                    <p id="xx1total"></p>
+                </td>
+                <td>
+                    <p id="xxyytotal"></p>
+                </td>
+
+                <td>
+                    <p id="xxx1total"></p>
+                </td>
+                <td>
+                    <p id="tdtotal"></p>
+                </td>
+
+
+            </tr>
+        </table>
+        <p class="valuem"></p><br>
+        <p class="valuec"></p>
+        <hr>
+        <h1>Graph</h1>
+        <p>It will auto load if internet is connected</p><br>
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    </center>
+</body>
+
+<script src="year.js"></script>
+
+
+</html>
